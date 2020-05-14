@@ -1,0 +1,10 @@
+{
+  "name": "apicacher",
+  "version": "1.0.0",
+  "description": "Caching library which uses cacheAPI and service workers to cache API requests/responses and other resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gautam Pahuja(https://github.com/gautam-pahuja)"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokemon.css"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<div class="container">
+    <h1>Pokedex</h1>
+    <br/>
+    <div class="btn-bg Pokemon">
+        <div class="btn-group">
+            <div class="btn ball">
+                <button id="fetchPokemon">
+                    <div class="pokemon-ball"></div>
+                    <a>get me a new Pokémon<span data-letters="Go!"></span><span data-letters="Go!"></span></a>
+                </button>
+                <br/>
+                <button id="emptySelectedreq">
+                    <div class="pokemon-ball"></div>
+                    <a>Delete bulbasaur from cache<span data-letters="Go!"></span><span data-letters="Go!"></span></a>
+                </button>
+                <br/>
+                <button id="deleteCache">
+                    <div class="pokemon-ball"></div>
+                    <a>Delete cache<span data-letters="Go!"></span><span data-letters="Go!"></span></a>
+                </button>
+                <ul id="pokedex"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="scripts/app.js"></script>
+</body>
+</html>

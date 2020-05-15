@@ -31,6 +31,8 @@ fetchResponse();
 
 ## API
 
+### Constructor
+
 **Params**
 
 * `name` **{String}**: Name for the cache.

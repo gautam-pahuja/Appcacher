@@ -12,10 +12,14 @@ Cache with `create`, `get`, `add`, `delete`, and `remove` methods.
 const app = new AppCacher('my-pokemon-cache');
 app.create();
 
-const url = `https://pokeapi.co/api/v2/pokemon/1`;
+const url = 'https://pokeapi.co/api/v2/pokemon/1';
 const req = new Request(url);
 
-app.add(req);           // or app.add(url);
+app.add(req);           
+
+//or 
+
+app.add(url);
 
 async function fetchResponse() {
     const cachedResponse = await app.get(req);
@@ -26,6 +30,8 @@ fetchResponse();
 ```
 
 ## API
+
+### Constructor
 
 **Params**
 

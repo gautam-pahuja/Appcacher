@@ -37,12 +37,12 @@ const displayPokemon = (result) => {
 };
 
 function deleteCache() {
-    app.remove();
+    app.delete();
 }
 
 function emptySelectedreq(url) {
     const req = new Request(url);
-    app.delete(req);
+    app.remove(req);
 }
 document.getElementById ("fetchPokemon").addEventListener ("click", fetchPokemon, false);
 document.getElementById ("emptySelectedreq").addEventListener ("click", emptySelectedreq.bind(event, 'https://pokeapi.co/api/v2/pokemon/1'), false);

@@ -21,13 +21,14 @@ export class AppCacher {
         return await this.cache.match(req);
     }
 
-    delete(req) {
-        this.cache.delete(req).then(r => console.log('request deleted from cache'));
+    remove(req){
+        this.cache.delete(req).then(r => console.log('cache removed'));
     }
 
-    remove(){
-        caches.delete(this.name).then(() => console.log('cache deleted'));
+    delete() {
+        caches.delete(this.name).then(() => console.log('request deleted from cache'));
     }
+
 }
 
 function isCacheAvailable() {

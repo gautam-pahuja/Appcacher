@@ -1,7 +1,7 @@
 {
   "name": "apicacher",
   "version": "1.0.0",
-  "description": "Caching library which uses cacheAPI and service workers to cache API requests/responses and other resources",
+  "description": "Caching library which uses cacheAPI to cache API requests/responses and service workers for other resources",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

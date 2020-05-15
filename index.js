@@ -1,6 +1,7 @@
 export class AppCacher {
-    constructor(name) {
+    constructor(name, ttl) {
         this.name = name;
+        this.ttl = ttl;
         this.cache = null;
         if (!isCacheAvailable()) {
             return console.error('cacheAPI is not supported in your browser');
@@ -11,6 +12,7 @@ export class AppCacher {
         caches.open(this.name).then((res) => {
             this.cache = res;
         });
+        if(this.ttl) setTimeout(()=> { this.delete() }, this.ttl)
     }
 
     add(req) {
@@ -27,6 +29,18 @@ export class AppCacher {
 
     delete() {
         caches.delete(this.name).then(() => console.log('request deleted from cache'));
+    }
+
+    has(cacheName) {
+        caches.has(cacheName).then((boolean) => {
+            return boolean;
+        });
+    }
+
+    getAllCacheNames() {
+        caches.keys().then((cacheNames) => {
+            return cacheNames
+        });
     }
 
 }

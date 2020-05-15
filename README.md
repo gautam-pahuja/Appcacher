@@ -30,6 +30,7 @@ fetchResponse();
 **Params**
 
 * `name` **{String}**: Name for the cache.
+* `ttl` **{Number}**: Time to live for the cache.
 
 **Example**
 
@@ -123,4 +124,33 @@ Deletes the entire cache from the browser.
 app.delete().then(function(response) {
     console.log(response);   // true
 });
+```
+
+### [.has](index.js#L34)
+
+Check whether your cache is present or not 
+
+**Params**
+
+* `cacheName` **{String}**: The name of the cache to check.
+* `returns` **{Boolean}**: returns true if the cache is present, or false otherwise.                         
+
+**Example**
+
+```js
+app.has('my-pokemon-cache'); // returns true
+```
+
+### [.getAllCacheNames](index.js#L40)
+
+Returns an array with the names of all caches present. This can be useful if you want to iterate over the entries in all caches. 
+
+**Params**
+
+* `returns` **{Array}**: list with the names of all caches present.
+
+**Example**
+
+```js
+getAllCacheNames(); // returns ['my-pokemon-cache']
 ```

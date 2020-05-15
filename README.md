@@ -1,5 +1,5 @@
 # Appcacher
-Cache with `create`, `get`, `add`, `delete`, and `remove` methods.
+Cache with `create`, `get`, `add`, `delete`, `has` and `remove` methods.
 
 > 
 

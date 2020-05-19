@@ -1,7 +1,7 @@
 {
   "name": "appcacher",
-  "version": "1.0.1",
-  "description": "Caching library which uses cacheAPI to cache requests/responses",
+  "version": "1.0.2",
+  "description": "A library which uses cacheAPI to cache requests/responses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

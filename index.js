@@ -19,8 +19,16 @@ export class AppCacher {
         this.cache.add(req).then(r => console.log('request added to cache'));
     }
 
-    async get(req) {
-        return await this.cache.match(req);
+    addAll(req) {
+        this.cache.addAll(req).then(r => console.log('requests added to cache'));
+    }
+
+    async get(req, options = {}) {
+        return await this.cache.match(req, options);
+    }
+
+    async getAll(req, options = {}) {
+        return await this.cache.matchAll(req, options);
     }
 
     remove(req){
@@ -29,6 +37,10 @@ export class AppCacher {
 
     delete() {
         caches.delete(this.name).then(() => console.log('request deleted from cache'));
+    }
+
+    put(req, resp) {
+        caches.put(req, resp).then(() => console.log('request successfully put to cache'));
     }
 
     has(cacheName) {

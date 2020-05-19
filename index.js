@@ -55,6 +55,12 @@ export class AppCacher {
         });
     }
 
+    getStorageQouta() {
+        navigator.storage.estimate().then((estimate) => {
+            return estimate;
+        });
+    }
+
 }
 
 function isCacheAvailable() {

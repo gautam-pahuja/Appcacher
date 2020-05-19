@@ -1,6 +1,6 @@
 {
   "name": "appcacher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A library which uses cacheAPI to cache requests/responses",
   "main": "index.js",
   "repository": {

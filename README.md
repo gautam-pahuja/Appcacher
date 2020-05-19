@@ -237,3 +237,17 @@ Returns an array with the names of all caches present. This can be useful if you
 ```js
 getAllCacheNames(); // returns ['my-pokemon-cache']
 ```
+
+### [.getStorageQouta](index.js#L58)[EXPERIMENTAL]
+
+Returns the size, in bytes, the total qouta and the used qouta. 
+
+**Params**
+
+* `returns` **{Object}**: list with the usage and total qouta with details.
+
+**Example**
+
+```js
+getStorageQouta(); // returns {quota: 239400581529, usage: 725290, usageDetails: {caches: 721920, indexedDB: 3370}}
+```

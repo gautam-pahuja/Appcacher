@@ -4,7 +4,7 @@ export class AppCacher {
         this.ttl = ttl;
         this.cache = null;
         if (!isCacheAvailable()) {
-            return console.error('cacheAPI is not supported in your browser');
+            return console.error('cacheAPI is not supported in your browser.');
         }
     }
 
@@ -16,11 +16,11 @@ export class AppCacher {
     }
 
     add(req) {
-        this.cache.add(req).then(r => console.log('request added to cache'));
+        this.cache.add(req).then(r => console.log('Request added to cache.'));
     }
 
     addAll(req) {
-        this.cache.addAll(req).then(r => console.log('requests added to cache'));
+        this.cache.addAll(req).then(r => console.log('Requests added to cache.'));
     }
 
     async get(req, options = {}) {
@@ -32,15 +32,15 @@ export class AppCacher {
     }
 
     remove(req){
-        this.cache.delete(req).then(r => console.log('cache removed'));
+        this.cache.delete(req).then(r => console.log('Request removed.'));
     }
 
     delete() {
-        caches.delete(this.name).then(() => console.log('request deleted from cache'));
+        caches.delete(this.name).then(() => console.log('Cache deleted.'));
     }
 
     put(req, resp) {
-        caches.put(req, resp).then(() => console.log('request successfully put to cache'));
+        caches.put(req, resp).then(() => console.log('Request successfully put to cache.'));
     }
 
     has(cacheName) {

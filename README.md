@@ -9,7 +9,7 @@ Create and manage your cache with Appcacher.
 ## Quickstart
 
 ```js
-const app = new AppCacher('my-pokemon-cache');
+const app = new AppCacher('my-pokemon-cache', 60 * 60 * 1000); // keep the cache for 1 hour
 app.create();
 
 const url = 'https://pokeapi.co/api/v2/pokemon/1';

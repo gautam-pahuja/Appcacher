@@ -1,5 +1,5 @@
 const pokedex = document.getElementById('pokedex');
-import { AppCacher } from "../../index.js";
+import { AppCacher } from "../../dist/appcacher.mjs";
 
 const app = new AppCacher('my-pokemon-cache', 100000);
 app.create();

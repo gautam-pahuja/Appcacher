@@ -1,6 +1,8 @@
 # Appcacher
 Create and manage your cache with Appcacher.
 
+**NOTE:** Appcacher only works for caching GET requests.
+
 > 
 
 - [Quickstart](#quickstart)

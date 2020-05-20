@@ -1,4 +1,5 @@
-# Appcacher
+# Appcacher [![npm](https://img.shields.io/npm/v/appcacher.svg)](https://www.npmjs.com/package/appcacher) ![NPM monthly downloads](https://img.shields.io/npm/dm/appcacher.svg?style=flat) 
+
 Create and manage your cache with Appcacher.
 
 **NOTE:** Appcacher only works for caching GET requests.

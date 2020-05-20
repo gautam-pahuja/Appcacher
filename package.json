@@ -1,7 +1,7 @@
 {
   "author": "Gautam Pahuja(https://github.com/gautam-pahuja)",
   "name": "appcacher",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library which uses cacheAPI to cache requests/responses",
   "main": "index.js",
   "license": "MIT",

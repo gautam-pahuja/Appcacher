@@ -1,14 +1,27 @@
 {
+  "author": "Gautam Pahuja(https://github.com/gautam-pahuja)",
   "name": "appcacher",
   "version": "1.0.4",
   "description": "A library which uses cacheAPI to cache requests/responses",
   "main": "index.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gautam-pahuja/Appcacher"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "del dist && rollup -c && npm run compress-iife && npm run create-compat && npm run create-cjs-compat && npm run compress-amd",
+    "compress-iife": "uglifyjs --compress --mangle -o dist/appcacher-iife.min.js dist/appcacher-iife.js",
+    "create-compat": "babel dist/appcacher-iife.js | uglifyjs --compress --mangle > dist/appcacher-iife-compat.min.js",
+    "create-cjs-compat": "babel dist/appcacher-cjs.js | uglifyjs --compress --mangle > dist/appcacher-cjs-compat.min.js",
+    "compress-amd": "uglifyjs --compress --mangle -o dist/appcacher-amd.min.js dist/appcacher-amd.js"
   },
-  "author": "Gautam Pahuja(https://github.com/gautam-pahuja)"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "del-cli": "^1.1.0",
+    "rollup": "^0.56.5",
+    "typescript": "^2.7.2",
+    "uglify-es": "^3.3.9"
+  }
 }

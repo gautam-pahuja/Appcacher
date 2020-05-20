@@ -251,3 +251,8 @@ Returns the size, in bytes, the total qouta and the used qouta.
 ```js
 getStorageQouta(); // returns {quota: 239400581529, usage: 725290, usageDetails: {caches: 721920, indexedDB: 3370}}
 ```
+
+### License
+
+Copyright © 2020, [Gautam Pahuja](https://github.com/gautam-pahuja).
+Released under the [MIT License](LICENSE).

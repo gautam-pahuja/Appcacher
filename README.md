@@ -9,9 +9,20 @@ Create and manage your cache with Appcacher.
 - [Quickstart](#quickstart)
 - [API](#api)
 
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install appcacher
+```
+
 ## Quickstart
 
 ```js
+import { AppCacher } from "appcacher";
+
+
 const app = new AppCacher('my-pokemon-cache', 60 * 60 * 1000); // keep the cache for 1 hour
 app.create();
 

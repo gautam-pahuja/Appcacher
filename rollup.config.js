@@ -3,7 +3,7 @@ export default {
     output: [{
         file: 'dist/appcacher-iife.js',
         format: 'iife',
-        name: 'idbKeyval'
+        name: 'appcacher'
     }, {
         file: 'dist/appcacher-cjs.js',
         format: 'cjs'

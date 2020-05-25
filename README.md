@@ -6,6 +6,7 @@ Create and manage your cache with Appcacher.
 
 > 
 
+- [Install](#install)
 - [Quickstart](#quickstart)
 - [API](#api)
 

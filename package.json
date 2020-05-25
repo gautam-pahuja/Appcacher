@@ -25,10 +25,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "del-cli": "^1.1.0",
-    "rollup": "^0.56.5",
-    "typescript": "^2.7.2",
+    "babel-preset-env": "^1.7.0",
+    "del-cli": "^3.0.1",
+    "rollup": "^2.10.9",
     "uglify-es": "^3.3.9"
   }
 }
